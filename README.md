@@ -1,10 +1,11 @@
 # Buy Adi a Coffee - DApp
 
-A decentralized application for purchasing Coffee using crypto while including a personalized message ☕️
+An application for purchasing Coffee using crypto while including a personalized message ☕️
 
-**Deployment Link:** https://buyadiacoffee.vercel.app
-<br>
-**Contract Address on NeoX T4 Testnet:** [0x546494491acF698C610513d231e0cB35c1fC59b9](https://xt4scan.ngd.network/address/0x546494491acF698C610513d231e0cB35c1fC59b9)
+
+Deployment Link: https://buyadiacoffee.vercel.app
+
+Contract Address (Deployed on NeoX T4 Testnet): [0x546494491acF698C610513d231e0cB35c1fC59b9](https://xt4scan.ngd.network/address/0x546494491acF698C610513d231e0cB35c1fC59b9)
 
 # Getting Started
 
