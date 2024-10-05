@@ -16,7 +16,7 @@ contract Coffee {
         owner = payable(msg.sender);
     }
 
-    function buycoffee(
+    function buyCoffee(
         string memory name,
         string memory message
     ) public payable {
