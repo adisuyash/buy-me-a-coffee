@@ -13,6 +13,7 @@ function App() {
     contract: null,
   });
   const [account, setAccount] = useState("None");
+  const [loading, setLoading] = useState(true); // Track loading state
 
   useEffect(() => {
     const connectWallet = async () => {
@@ -22,10 +23,11 @@ function App() {
         const { ethereum } = window;
 
         if (ethereum) {
-          const account = await ethereum.request({
+          const accounts = await ethereum.request({
             method: "eth_requestAccounts",
           });
 
+          // Reload the page when the chain or account changes
           window.ethereum.on("chainChanged", () => {
             window.location.reload();
           });
@@ -42,25 +44,28 @@ function App() {
             contractABI,
             signer
           );
-          setAccount(account);
+          setAccount(accounts[0]); // Update to set the first account
           setState({ provider, signer, contract });
         } else {
-          alert("Please install metamask");
+          alert("Please install Metamask");
         }
       } catch (error) {
-        console.log(error);
+        console.error("Error connecting to wallet:", error);
+      } finally {
+        setLoading(false); // Set loading to false after trying to connect
       }
     };
     connectWallet();
   }, []);
 
+  if (loading) {
+    return <div>Loading...</div>; // Loading state while connecting to wallet
+  }
+
   return (
     <div style={{ backgroundColor: "#EFEFEF", height: "100px" }}>
       <img src={Coffee} className="img-fluid" alt="Coffee" width="100px" />
-      <p
-        className="text-muted lead"
-        style={{ marginTop: "10px", marginLeft: "5px" }}
-      >
+      <p className="text-muted lead" style={{ marginTop: "10px", marginLeft: "5px" }}>
         <small>Connected Account - {account}</small>
       </p>
       <div className="container">
