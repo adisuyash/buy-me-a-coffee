@@ -7,6 +7,9 @@ Deployment Link: https://buyadiacoffee.vercel.app
 
 Contract Address (Deployed on NeoX T4 Testnet): [0x546494491acF698C610513d231e0cB35c1fC59b9](https://xt4scan.ngd.network/address/0x546494491acF698C610513d231e0cB35c1fC59b9)
 
+![image](https://github.com/user-attachments/assets/878ae2cf-a288-4e7f-a84d-543f52193f42)
+
+
 # Getting Started
 
 To get this **Buy Adi a Coffee - DApp** running, follow the steps below:
