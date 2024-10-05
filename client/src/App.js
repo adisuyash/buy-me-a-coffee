@@ -1,9 +1,9 @@
-import abi from "./contract/chai.json";
+import abi from "./contract/Coffee.json";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import Buy from "./components/Buy";
 import Memos from "./components/Memos";
-import chai from "./chai.png";
+import Coffee from "./Coffee.png";
 import "./App.css";
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor: "#EFEFEF", height: "100px" }}>
-      <img src={chai} className="img-fluid" alt="chai" width="100px" />
+      <img src={Coffee} className="img-fluid" alt="Coffee" width="100px" />
       <p
         className="text-muted lead"
         style={{ marginTop: "10px", marginLeft: "5px" }}

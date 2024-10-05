@@ -1,6 +1,6 @@
-# Chai Buying DApp
+# coffee Buying DApp
 
-🍵 This is a decentralized application (DApp) for purchasing chai using cryptocurrency while including a personalized message. ☕️
+🍵 This is a decentralized application (DApp) for purchasing Coffee using cryptocurrency while including a personalized message. ☕️
 
 ## Getting Started
 
@@ -15,16 +15,19 @@ git clone <repository-url>
 ### Contract Compilation and Deployment
 
 1. Install dependencies:
+
    ```
    npm install
    ```
 
 2. Compile the contracts:
+
    ```
    npx hardhat compile
    ```
 
 3. Create a `.env` file:
+
    - Mention the RPC URL of Neo X Testnet T4 and your private key in the `.env` file.
 
 4. Deploy the smart contract:
@@ -38,11 +41,13 @@ git clone <repository-url>
 1. Ensure you have MetaMask installed in your browser.
 
 2. Navigate to the `client` directory:
+
    ```
    cd client
    ```
 
 3. Install frontend dependencies:
+
    ```
    npm install
    ```
@@ -57,6 +62,6 @@ git clone <repository-url>
 Once the DApp is set up:
 
 1. Connect your MetaMask wallet to the DApp.
-2. Send cryptocurrency to purchase chai.
+2. Send cryptocurrency to purchase Coffee.
 3. Write a sweet message to accompany your purchase.
-4. Enjoy your chai!
+4. Enjoy your Coffee!

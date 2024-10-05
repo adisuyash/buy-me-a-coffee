@@ -6,7 +6,7 @@ const Buy = ({ state }) => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false); // To manage loading state
 
-  const buyChai = async (event) => {
+  const buycoffee = async (event) => {
     event.preventDefault();
     const { contract } = state;
 
@@ -23,9 +23,9 @@ const Buy = ({ state }) => {
       const amount = { value: ethers.parseEther("0.001") };
 
       // Send the transaction
-      const transaction = await contract.buyChai(name, message, amount);
+      const transaction = await contract.buycoffee(name, message, amount);
       await transaction.wait();
-      
+
       console.log("Transaction is done");
 
       // Clear the form
@@ -41,7 +41,7 @@ const Buy = ({ state }) => {
 
   return (
     <div className="container-md" style={{ width: "50%", marginTop: "25px" }}>
-      <form onSubmit={buyChai}>
+      <form onSubmit={buycoffee}>
         <div className="mb-3">
           <label className="form-label">Name</label>
           <input

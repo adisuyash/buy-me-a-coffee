@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "chai",
-  "sourceName": "contracts/Chai.sol",
+  "contractName": "Coffee",
+  "sourceName": "contracts/Coffee.sol",
   "abi": [
     {
       "inputs": [],
@@ -21,7 +21,7 @@
           "type": "string"
         }
       ],
-      "name": "buyChai",
+      "name": "buycoffee",
       "outputs": [],
       "stateMutability": "payable",
       "type": "function"
@@ -53,7 +53,7 @@
               "type": "address"
             }
           ],
-          "internalType": "struct chai.Memo[]",
+          "internalType": "struct Coffee.Memo[]",
           "name": "",
           "type": "tuple[]"
         }
