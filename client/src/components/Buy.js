@@ -66,10 +66,11 @@ const Buy = ({ state }) => {
         </div>
         <button
           type="submit"
+          style={{ width: "100%" }}
           className="btn btn-primary"
           disabled={!state.contract || loading} // Disable button if contract is not available or if loading
         >
-          {loading ? "Processing..." : "Pay"} {/* Change button text based on loading state */}
+          {loading ? "Processing..." : "Send Now!"} {/* Change button text based on loading state */}
         </button>
       </form>
     </div>

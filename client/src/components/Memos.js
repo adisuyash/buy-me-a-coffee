@@ -38,7 +38,7 @@ const Memos = ({ state }) => {
 
   return (
     <>
-      <p style={{ textAlign: "center", marginTop: "20px" }}>Messages</p>
+      <p style={{ textAlign: "center", fontSize: "24px", fontWeight: "500", marginTop: "20px" }}>Aditya's Previous Sponsors</p>
       {memos.length === 0 ? (
         <p style={{ textAlign: "center" }}>No messages available.</p>
       ) : (

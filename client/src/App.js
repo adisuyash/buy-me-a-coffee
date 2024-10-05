@@ -63,15 +63,25 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "#EFEFEF", height: "100px" }}>
-      <img src={Coffee} className="img-fluid" alt="Coffee" width="100px" />
-      <p className="text-muted lead" style={{ marginTop: "10px", marginLeft: "5px" }}>
+    <div style={{ backgroundColor: "#EFEFEF", height: "100%", margin: "0" }}>
+      <div style={{ backgroundColor: "#f4f666", display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "25px", paddingTop: "25px" }}>
+        <div style={{ width: "200px", marginRight: "40px" }}>
+          <img src={Coffee} className="img-fluid" alt="Coffee" width="150px" style={{ borderRadius: "100%", marginLeft: "5px" }} />
+        </div>
+        <div>
+          <h2 className="display-2 text-center">Buy Adi a Coffee!</h2>
+          <p className="text-center" style={{fontSize: "1.3em"}}>Treat Aditya to a coffee using crypto on the NeoX Chain!</p>
+        </div>
+        <div style={{ width: "200px" }}></div>
+      </div>
+      <p className="text-muted lead" style={{ marginTop: "10px", marginLeft: "5px", textAlign: "center" }}>
         <small>Connected Account - {account}</small>
       </p>
       <div className="container">
         <Buy state={state} />
         <Memos state={state} />
       </div>
+      <div style={{ marginTop: "25px",marginBottom: "20px", textAlign: "center" }}>Built with ❤️ by <a href="https://github.com/AdiSuyash" target="_blank" rel="noopener noreferrer">AdiSuyash</a> </div>
     </div>
   );
 }
