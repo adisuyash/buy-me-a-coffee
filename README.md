@@ -1,6 +1,6 @@
 # Coffee Buying DApp
 
-🍵 This is a decentralized application (DApp) for purchasing Coffee using cryptocurrency while including a personalized message. ☕️
+🍵 A dApp for purchasing Coffee using crypto while including a personalized message. ☕️
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ To get this DApp running, follow the steps below:
 ### Clone the Repository
 
 ```
-git clone <repository-url>
+git clone https://github.com/adisuyash/buy-me-a-coffee.git
 ```
 
 ### Contract Compilation and Deployment
@@ -26,15 +26,15 @@ git clone <repository-url>
    npx hardhat compile
    ```
 
-3. Create a `.env` file:
+3. Create a `.env` file and copy the contents from the `.env.example` file into it.
 
-   - Mention the RPC URL of Neo X Testnet T4 and your private key in the `.env` file.
+   - The RPC URL of **NeoX Testnet T4** is `https://neoxt4seed1.ngd.network/` and your private key in the `.env` file.
 
 4. Deploy the smart contract:
    ```
    npx hardhat run scripts/finalDeploy.js --network <network-name>
    ```
-   Replace `<network-name>` with the desired network (e.g., Neox).
+   Replace `<network-name>` with the desired network. Here we are using **neoxt4**.
 
 ### Frontend Setup
 
@@ -59,9 +59,10 @@ git clone <repository-url>
 
 ## Usage
 
-Once the DApp is set up:
+Once the **Buy Me a Coffee** dApp is set up:
 
 1. Connect your MetaMask wallet to the DApp.
 2. Send cryptocurrency to purchase Coffee.
 3. Write a sweet message to accompany your purchase.
 4. Enjoy your Coffee!
+
