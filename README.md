@@ -1,4 +1,4 @@
-# coffee Buying DApp
+# Coffee Buying DApp
 
 🍵 This is a decentralized application (DApp) for purchasing Coffee using cryptocurrency while including a personalized message. ☕️
 
