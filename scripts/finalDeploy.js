@@ -4,10 +4,10 @@ async function main() {
   console.log("Deploying contracts with the account:", (await hre.ethers.getSigners())[0].address);
 
   // Get the contract factory - note the lowercase "coffee" to match the contract name
-  const Chai = await hre.ethers.getContractFactory("coffee");
+  const Coffee = await hre.ethers.getContractFactory("Coffee");
 
   // Deploy the contract
-  const coffee = await Chai.deploy();  // Remove gas settings from deploy call
+  const coffee = await Coffee.deploy();  // Remove gas settings from deploy call
 
   // Wait for deployment to complete
   await coffee.waitForDeployment();
