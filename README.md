@@ -2,8 +2,7 @@
 
 An application for purchasing Coffee using crypto while including a personalized message ☕️
 
-
-![image](https://github.com/user-attachments/assets/878ae2cf-a288-4e7f-a84d-543f52193f42)
+![Buy Adi a Coffee](https://github.com/user-attachments/assets/4362ee18-fa4f-420c-9420-2c38f9312a6e)
 
 **Deployment Link**: https://buyadiacoffee.vercel.app
 
