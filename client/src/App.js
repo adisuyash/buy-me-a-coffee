@@ -4,7 +4,8 @@ import { ethers } from "ethers";
 import Buy from "./components/Buy";
 import Memos from "./components/Memos";
 import Coffee from "./Coffee.png";
-import "./App.css";
+// import "./App.css";
+
 
 function App() {
   const [state, setState] = useState({
@@ -63,8 +64,8 @@ function App() {
   }
 
   return (
-    <div style={{ backgroundColor: "#EFEFEF", height: "100%", margin: "0" }}>
-      <div style={{ backgroundColor: "#f4f666", display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "25px", paddingTop: "25px" }}>
+    <div className="bg-blue-300" style={{ background: "#efefef", height: "100%", margin: "0" }}>
+      <div className="bg-default-lemon-yellow" style={{   display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "25px", paddingTop: "25px" }}>
         <div style={{ width: "200px", marginRight: "40px" }}>
           <img src={Coffee} className="img-fluid" alt="Coffee" width="150px" style={{ borderRadius: "100%", marginLeft: "5px" }} />
         </div>
