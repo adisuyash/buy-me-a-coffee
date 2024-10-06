@@ -8,6 +8,7 @@ module.exports = {
       colors: {
           'default-sky-blue': '#61dafb',
           'default-lemon-yellow': '#f4f666',
+          'some-white': '#efefef',
       }
     },
   },

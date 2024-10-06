@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 import Buy from "./components/Buy";
 import Memos from "./components/Memos";
 import Coffee from "./Coffee.png";
-// import "./App.css";
+// import "./styles/App.css";
 
 
 function App() {
@@ -64,25 +64,26 @@ function App() {
   }
 
   return (
-    <div className="bg-blue-300" style={{ background: "#efefef", height: "100%", margin: "0" }}>
-      <div className="bg-default-lemon-yellow" style={{   display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "25px", paddingTop: "25px" }}>
-        <div style={{ width: "200px", marginRight: "40px" }}>
-          <img src={Coffee} className="img-fluid" alt="Coffee" width="150px" style={{ borderRadius: "100%", marginLeft: "5px" }} />
+    <div className="bg-some-white h-full">
+      <div className="bg-default-lemon-yellow flex items-center  justify-center">
+        <div className="m-10" >
+          <img src={Coffee} className="img-fluid rounded-full ml-4 w-[150px]" alt="Coffee"   />
         </div>
         <div>
-          <h2 className="display-2 text-center">Buy Adi a Coffee!</h2>
-          <p className="text-center" style={{fontSize: "1.3em"}}>Treat Aditya to a coffee using crypto on the NeoX Chain!</p>
+          <h2 className="text-5xl text-center">Buy Adi a Coffee!</h2>
+          <p className="text-center .text-1-3em" >Treat Aditya to a coffee using crypto on the NeoX Chain!</p>
         </div>
-        <div style={{ width: "200px" }}></div>
+        <div className="w-[200px]"></div>
       </div>
-      <p className="text-muted lead" style={{ marginTop: "10px", marginLeft: "5px", textAlign: "center" }}>
+      <p className="text-gray-500 text-lg mt-2.5 ml-1.25">
         <small>Connected Account - {account}</small>
       </p>
       <div className="container">
         <Buy state={state} />
         <Memos state={state} />
       </div>
-      <div style={{ marginTop: "25px",marginBottom: "20px", textAlign: "center" }}>Built with ❤️ by <a href="https://github.com/AdiSuyash" target="_blank" rel="noopener noreferrer">AdiSuyash</a> </div>
+      <div className="mt-6.25 mb-5 text-center"
+      >Built with ❤️ by <a href="https://github.com/AdiSuyash" target="_blank" rel="noopener noreferrer">AdiSuyash</a> </div>
     </div>
   );
 }

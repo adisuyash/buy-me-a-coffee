@@ -4,15 +4,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-// import './index.css';
-
-import './_input.css';
+import './styles/_input.css';
 import './styles/root.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App className="bg-default-sky-blue" />
   </React.StrictMode>
 );
 
