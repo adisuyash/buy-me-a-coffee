@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.w-200 {
+    width: 200%;
+  }
+
+
+  .text-1-3em {
+    font-size: 1.3em;
+}

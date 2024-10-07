@@ -40,13 +40,13 @@ const Buy = ({ state }) => {
   };
 
   return (
-    <div className="container-md" style={{ width: "50%", marginTop: "25px" }}>
+    <div className="container mx-auto w-1/2 mt-6.25">
       <form onSubmit={buyCoffee}>
         <div className="mb-3">
-          <label className="form-label">Name</label>
+          <label className="block text-sm font-medium text-gray-700">Name</label>
           <input
             type="text"
-            className="form-control"
+            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter Your Name"
@@ -57,7 +57,7 @@ const Buy = ({ state }) => {
           <label className="form-label">Message</label>
           <input
             type="text"
-            className="form-control"
+            className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Enter Your Message"
@@ -66,8 +66,7 @@ const Buy = ({ state }) => {
         </div>
         <button
           type="submit"
-          style={{ width: "100%" }}
-          className="btn btn-primary"
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded w-full"
           disabled={!state.contract || loading} // Disable button if contract is not available or if loading
         >
           {loading ? "Processing..." : "Send Now!"} {/* Change button text based on loading state */}
