@@ -75,10 +75,10 @@ function App() {
         </div>
         <div className="w-[200px]"></div>
       </div>
-      <p className="text-gray-500 text-lg mt-2.5 ml-1.25">
+      <p className=" text-center text-gray-500 text-lg mt-2.5 ml-1.25">
         <small>Connected Account - {account}</small>
       </p>
-      <div className="container">
+      <div className="container"> 
         <Buy state={state} />
         <Memos state={state} />
       </div>

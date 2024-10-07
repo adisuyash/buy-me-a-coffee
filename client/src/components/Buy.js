@@ -46,7 +46,7 @@ const Buy = ({ state }) => {
           <label className="block text-sm font-medium text-gray-700">Name</label>
           <input
             type="text"
-            className="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter Your Name"
@@ -57,7 +57,7 @@ const Buy = ({ state }) => {
           <label className="form-label">Message</label>
           <input
             type="text"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Enter Your Message"
