@@ -7,7 +7,7 @@ An application for purchasing Coffee using crypto while including a personalized
 **Deployment Link**: https://buyadiacoffee.vercel.app
 
 **Contract Address (Deployed on NeoX T4 Testnet)**: [0x546494491acF698C610513d231e0cB35c1fC59b9](https://xt4scan.ngd.network/address/0x546494491acF698C610513d231e0cB35c1fC59b9)
-**Contract Address (Deployed on Linea Sepolia Testnet)**: []()
+**Contract Address (Deployed on Linea Sepolia Testnet)**: [0x5405d3e877636212CBfBA5Cd7415ca8C26700Bf4](https://sepolia.lineascan.build/address/0x5405d3e877636212CBfBA5Cd7415ca8C26700Bf4)
 **Contract Address (Deployed on EDU Chain Testnet)**: [0x31c13bed4969a135bE285Bcb7BfDc56b601EaA43](https://edu-chain-testnet.blockscout.com/address/0x31c13bed4969a135bE285Bcb7BfDc56b601EaA43)
 
 
